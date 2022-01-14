@@ -156,7 +156,7 @@ if __name__ == '__main__':
  df['date_created'] = df['date_created'].apply(lambda x: date_parser(x))
  df['date_closed'] = df['date_closed'].apply(lambda x: date_parser(x))
  df['date_progress'] = df['date_progress'].apply(lambda x: date_parser(x))
- st.dataframe(df.head())
+ #st.dataframe(df.head())
 
  timeframe = st.sidebar.radio("Timeframe", ["Quarter", 'Month', 'Week']).lower()
 
